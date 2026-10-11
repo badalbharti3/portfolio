@@ -74,7 +74,6 @@ if (form) {
 
     const subject = encodeURIComponent(`Portfolio message from ${name.value.trim()}`);
     const body = encodeURIComponent(`Name: ${name.value.trim()}\nEmail: ${email.value.trim()}\n\n${message.value.trim()}`);
-    document.querySelector('#form-status').textContent = 'Opening your email app to complete the message.';
     window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
   });
 }
